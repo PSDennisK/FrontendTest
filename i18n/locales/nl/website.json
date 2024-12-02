@@ -1,0 +1,60 @@
+{
+  "home": {
+    "news": "Nieuws",
+    "allNews": "Alle nieuwsberichten",
+    "whatIsPs": "Wat is PS in foodservice?",
+    "followUsOnLinkedIn": "volg ons op LinkedIn"
+  },
+  "employee": {
+    "imageAlt": "Foto van {{displayName}}",
+    "call": "Bel {{displayName}}",
+    "email": "E-mail {{displayName}}"
+  },
+  "contact": {
+    "submit": "Verzenden",
+    "submitting": "Bezig met verzenden",
+    "next": "Volgende",
+    "previous": "Vorige"
+  },
+  "calendar": {
+    "viewWebinar": "Bekijk webinar",
+    "noEvents": "Geen evenementen deze maand",
+    "readMore": "Lees meer"
+  },
+  "faq": {
+    "searchTitle": "Waar ben je naar op zoek?",
+    "searchFor": "Ik zoek naar..."
+  },
+  "faqCategories": {
+    "Allergens": "Allergenen",
+    "Quality marks and characteristics": "Keur- en kenmerken",
+    "Laws and regulations": "Wet- en regelgeving",
+    "Partners": "Partners",
+    "Information platforms": "Informatieplatformen",
+    "Plugins": "Plugins",
+    "Sustainability reporting": "Duurzaamheidsrapportage",
+    "Life cycle of a product": "Levenscyclus van een product",
+    "PS Impact Score": "PS Impact Score",
+    "Input variables": "Input variabelen",
+    "Quality marks from PS": "Keurmerken uit PS",
+    "Supplement data": "Aanvullen data",
+    "Sustainability variables": "Duurzaamheidsvariabelen",
+    "Updates": "Updates",
+    "HowGood": "HowGood",
+    "Own sustainability data": "Eigen duurzaamheidsdata",
+    "Other": "Overige"
+  },
+  "price": {
+    "choosePackages": "Maak een keuze uit de volgende pakketten",
+    "perYear": "per jaar",
+    "StandardPlan": "Standaard",
+    "PremiumPlan": "Premium",
+    "PremiumPlusPlan": "Premium +",
+    "standard": "standard",
+    "premium": "premium",
+    "premiumPlus": "premiumPlus",
+    "getStandard": "Koop standaard",
+    "getPremium": "Koop premium",
+    "getPremiumPlus": "Koop premium +"
+  }
+}

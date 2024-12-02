@@ -1,0 +1,488 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.3s ease-out;
+}
+
+/* Prevent scroll issues on iOS */
+html,
+body {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Disable iOS text size adjustment */
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Better touch handling */
+* {
+  touch-action: manipulation;
+}
+
+/* Hide recaptcha badge */
+.grecaptcha-badge {
+  display: none !important;
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .link {
+    @apply text-ps-blue-400 after:bg-ps-blue-400 relative inline-block hover:text-ps-blue-400 hover:underline;
+  }
+
+  .active {
+    background-color: #3cbeef;
+    color: #fff;
+  }
+
+  .product-card {
+    @apply flex flex-col overflow-hidden rounded-md cursor-pointer transition-all duration-300 relative h-full shadow-card;
+  }
+
+  .shadow-card {
+    --tw-shadow: 0px 0px 4px rgba(79, 95, 120, 0.1);
+    --tw-shadow-colored: 0px 0px 4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .shadow-card:hover {
+    --tw-shadow: 0px 0px 6px rgba(79, 95, 120, 0.18);
+    --tw-shadow-colored: 0px 0px 6px var(--tw-shadow-color);
+  }
+
+  .text-md {
+    font-size: 0.938rem;
+  }
+
+  .text-none {
+    font-size: 0;
+  }
+
+  .excluded {
+    filter: grayscale(100%);
+    opacity: 0.3;
+  }
+}
+
+.loading-icon {
+  animation: animate 2s infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+.swiper-wrapper .swiper-slide {
+  display: flex;
+  height: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  transition: all 0.3s ease;
+  color: #164376 !important;
+  opacity: 0.2;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 0.8;
+}
+
+.fi {
+  line-height: 1.5 !important;
+}
+
+.container .image-gallery-slides {
+  min-height: 415px;
+}
+
+.container .image-gallery-thumbnail {
+  border: 1px solid #e5e7eb;
+  background-color: #fff;
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.container .image-gallery-thumbnail img {
+  opacity: 0.5;
+}
+
+.container .image-gallery-thumbnail.active img,
+.container .image-gallery-thumbnail.hover img {
+  opacity: 1;
+}
+
+.container .image-gallery-thumbnail.active,
+.container .image-gallery-thumbnail.hover {
+  outline: none;
+  border: 1px solid #3cbeef;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .container .image-gallery-thumbnail:hover {
+    border: 1px solid #3cbeef;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Temp Partner page */
+@media (min-width: 992px) {
+  .col-md-4 {
+    width: 33.3333333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
+    float: left;
+  }
+}
+
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#partners .card-wrapper.heeft-icoon {
+  padding-top: 4px;
+  padding-bottom: 24px;
+}
+
+#partners .align-self-center {
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
+}
+
+#partners .card-icon {
+  width: 100px;
+  height: 100px;
+  margin: 4px auto -50px;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  border-radius: 999px;
+  position: relative;
+  text-align: center;
+  z-index: 8;
+  font-size: 22px;
+  overflow: hidden;
+}
+
+#partners .card-icon + .card {
+  padding-top: 60px;
+}
+
+#partners .card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: none;
+  border-radius: 9px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.125);
+  -ms-flex: auto;
+  flex: auto;
+  border-radius: 5px;
+}
+
+#partners .card .card-body {
+  padding: 20px;
+}
+
+#partners .card .card-title {
+  font-size: 22px;
+}
+
+#partners .card .card-title a {
+  color: #196fb6;
+}
+
+#costs .column h2 {
+  font-size: 25px;
+  line-height: 28px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+#costs .column p {
+  color: #595959;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#costs .table.pricingTable {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#costs .table.pricingTable th.green {
+  background-color: #7db800;
+  color: #fff;
+}
+
+#costs .table.pricingTable th {
+  font-size: 14px;
+  text-align: center;
+}
+
+#costs .table.pricingTable th.blue {
+  background-color: #005fb1;
+  color: #fff;
+}
+
+#costs .table.pricingTable th.lightblue {
+  background-color: #00c0f4;
+  color: #fff;
+}
+
+#costs .table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+
+#costs .table.pricingTable td {
+  font-size: 14px;
+  background-color: #f2f2f2;
+  border-color: #fff;
+}
+
+#costs .table.pricingTable td:nth-child(2n) {
+  background-color: #f7f7f7;
+}
+
+#costs .table > tbody > tr > td,
+#costs .table > tbody > tr > th,
+#costs .table > tfoot > tr > td,
+#costs .table > tfoot > tr > th,
+#costs .table > thead > tr > td,
+#costs .table > thead > tr > th {
+  padding: 8px;
+  line-height: 1.428571429;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+/* Footer CTA */
+#footer-cta .media-left {
+  padding-right: 30px;
+  display: table-cell;
+  vertical-align: top;
+}
+
+#footer-cta .media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+#footer-cta .media-body p {
+  margin: 10px 0 20px;
+  line-height: 26px;
+}
+
+#footer-cta .media-left img {
+  display: block;
+  max-width: max-content;
+}
+
+#footer-cta .media-body h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #595959;
+  text-transform: none;
+}
+
+:root {
+  --fc-button-text-color: #cbd1d2;
+  --fc-button-bg-color: transparent;
+  --fc-button-border-color: #cbd1d2;
+  --fc-button-hover-text-color: #fff;
+  --fc-button-hover-bg-color: #cbd1d2;
+  --fc-button-hover-border-color: #cbd1d2;
+  --fc-button-active-bg-color: #cbd1d2;
+  --fc-button-active-border-color: #cbd1d2;
+
+  --fc-border-color: transparent;
+  --fc-event-border-color: #3bbeef;
+  --fc-today-bg-color: transparent;
+  --fc-daygrid-event-dot-color: #3bbeef;
+  --fc-daygrid-dot-dot-color: #3bbeef;
+  --fc-daygrid-event-dot-opacity: 0.5;
+}
+
+.fc-button.fc-button-primary:focus {
+  box-shadow: none;
+}
+
+.fc-button.fc-button-primary:hover .fc-icon {
+  color: #fff;
+}
+
+.calendar td {
+  padding: 0.8em 0.1em;
+}
+
+.fc .fc-daygrid-day-events {
+  display: none;
+}
+
+.fc .fc-daygrid-day-number {
+  padding: 0;
+}
+
+td.fc-day .fc-daygrid-day-frame {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  border-radius: 50%;
+}
+
+.fc .fc-daygrid-day-number {
+  margin: auto;
+}
+
+td.fc-day.fc-day-today .fc-daygrid-day-frame {
+  background-color: #3bbeef;
+  color: #fff;
+}
+
+td.fc-day.has-event .fc-daygrid-day-frame {
+  background-color: #d3d3d3;
+  color: #fff;
+  border: 0;
+}
+
+td.fc-day.has-event.fc-day-today .fc-daygrid-day-frame {
+  background-color: #3bbeef;
+  color: #fff;
+}
+
+td.fc-day.has-event .fc-daygrid-day-frame:after {
+  content: '';
+  position: absolute;
+  top: calc(50% + 0.6em);
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: white;
+}

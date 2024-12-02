@@ -1,0 +1,60 @@
+{
+  "home": {
+    "news": "Nachrichten",
+    "allNews": "Alle Nachrichten anzeigen",
+    "whatIsPs": "Was ist PS in foodservice?",
+    "followUsOnLinkedIn": "Folgen Sie uns auf LinkedIn"
+  },
+  "employee": {
+    "imageAlt": "Foto von {{displayName}}",
+    "call": "Rufen Sie {{displayName}} an",
+    "email": "E-Mail an {{displayName}}"
+  },
+  "contact": {
+    "submit": "Submit",
+    "submitting": "Senden",
+    "next": "Nächste",
+    "previous": "Vorherige"
+  },
+  "calendar": {
+    "viewWebinar": "View webinar",
+    "noEvents": "No events this month",
+    "readMore": "Read more"
+  },
+  "faq": {
+    "searchTitle": "Was suchen Sie?",
+    "searchFor": "Ich suche..."
+  },
+  "faqCategories": {
+    "Allergens": "Allergene",
+    "Quality marks and characteristics": "Gütezeichen und Merkmale",
+    "Laws and regulations": "Gesetze und Vorschriften",
+    "Partners": "Partner",
+    "Information platforms": "Informationsplattformen",
+    "Plugins": "Plugins",
+    "Sustainability reporting": "Nachhaltigkeitsberichterstattung",
+    "Life cycle of a product": "Lebenszyklus eines Produkts",
+    "PS Impact Score": "PS Impact Score",
+    "Input variables": "Eingabevariablen",
+    "Quality marks from PS": "Gütesiegel von PS",
+    "Supplement data": "Ergänzungsdaten",
+    "Sustainability variables": "Nachhaltigkeitsvariablen",
+    "Updates": "Updates",
+    "HowGood": "HowGood",
+    "Own sustainability data": "Eigene Nachhaltigkeitsdaten",
+    "Other": "Andere"
+  },
+  "price": {
+    "choosePackages": "Wählen Sie aus den folgenden Paketen",
+    "perYear": "per Jahr",
+    "StandardPlan": "Standard",
+    "PremiumPlan": "Premium",
+    "PremiumPlusPlan": "Premium +",
+    "standard": "standard",
+    "premium": "premium",
+    "premiumPlus": "premiumPlus",
+    "getStandard": "Standard kaufen",
+    "getPremium": "Premium kaufen",
+    "getPremiumPlus": "Premium + kaufen"
+  }
+}

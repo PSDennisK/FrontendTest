@@ -1,0 +1,60 @@
+{
+  "home": {
+    "news": "News",
+    "allNews": "See all news",
+    "whatIsPs": "What is PS in foodservice?",
+    "followUsOnLinkedIn": "Follow us on LinkedIn"
+  },
+  "employee": {
+    "imageAlt": "Photo of {{displayName}}",
+    "call": "Call {{displayName}}",
+    "email": "Email {{displayName}}"
+  },
+  "contact": {
+    "submit": "Submit",
+    "submitting": "Sending",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "calendar": {
+    "viewWebinar": "View webinar",
+    "noEvents": "No events this month",
+    "readMore": "Read more"
+  },
+  "faq": {
+    "searchTitle": "What are you searching for?",
+    "searchFor": "I'm searching for..."
+  },
+  "faqCategories": {
+    "Allergens": "Allergens",
+    "Quality marks and characteristics": "Quality marks and characteristics",
+    "Laws and regulations": "Laws and regulations",
+    "Partners": "Partners",
+    "Information platforms": "Information platforms",
+    "Plugins": "Plugins",
+    "Sustainability reporting": "Sustainability reporting",
+    "Life cycle of a product": "Life cycle of a product",
+    "PS Impact Score": "PS Impact Score",
+    "Input variables": "Input variables",
+    "Quality marks from PS": "Quality marks from PS",
+    "Supplement data": "Supplement data",
+    "Sustainability variables": "Sustainability variables",
+    "Updates": "Updates",
+    "HowGood": "HowGood",
+    "Own sustainability data": "Own sustainability data",
+    "Other": "Other"
+  },
+  "price": {
+    "choosePackages": "Choose from the following packages",
+    "perYear": "per year",
+    "StandardPlan": "Standard",
+    "PremiumPlan": "Premium",
+    "PremiumPlusPlan": "Premium +",
+    "standard": "standaard",
+    "premium": "premium",
+    "premiumPlus": "premiumPlus",
+    "getStandard": "Buy standard",
+    "getPremium": "Buy Premium",
+    "getPremiumPlus": "Buy Premium +"
+  }
+}
